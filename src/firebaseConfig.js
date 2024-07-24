@@ -2,13 +2,13 @@ import { initializeApp } from 'firebase/app';
 import { getAuth, GoogleAuthProvider } from 'firebase/auth';
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDOIHyhYwutGII_2G5olQ8XorrBlEzVrqc",
-  authDomain: "image-f4a49.firebaseapp.com",
-  projectId: "image-f4a49",
-  storageBucket: "image-f4a49.appspot.com",
-  messagingSenderId: "126345642472",
-  appId: "1:126345642472:web:807eb61f820ef79c82645d",
-  measurementId: "G-FDEPWP33TT"
+  apiKey: process.env.apikey,
+  authDomain: process.env.authDomain,
+  projectId: process.env.projectId,
+  storageBucket: process.env.storageBucket,
+  messagingSenderId: process.env.messagingSenderId,
+  appId: process.env.appId,
+  measurementId: process.env.measurementId
 };
 const app = initializeApp(firebaseConfig);
 
